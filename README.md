@@ -7,8 +7,8 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/cryozeus/recipe-api?style=for-the-badge)
 ![Lines of code](https://img.shields.io/tokei/lines/github/cryozeus/recipe-api?style=for-the-badge)
 
-### An API that manages recipes and delivers customized results
-An application where users can log in and create recipes for their restaurants.
+### An Application that creates, manages recipes for restaurants and delivers custom results
+
 
 ## Recipe:
 Recipe of menu items like Chicken Biryani, Pasta, Pizza, etc.
