@@ -21,6 +21,7 @@ def contact():
 
 @app.route("/hello/<name>")
 def hello_there(name = None):
+    """Render Hello <name> page."""
     return render_template(
         "hello_there.html",
         name=name,
