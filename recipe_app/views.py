@@ -29,7 +29,8 @@ def hello_there(name = None):
     """
     return render_template(
         "hello_there.html",
-        name = name,form=date = datetime.now()
+        name = name,
+        date = datetime.now()
     )
 
 @app.route("/api/data")
