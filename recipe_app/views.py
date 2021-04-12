@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 from . import app
 
@@ -20,15 +20,15 @@ def contact():
     """Render Contact Page"""
     return render_template("contact.html")
 
-@app.route("/hello")
-@app.route("/hello/<name>")
-def hello_there(name = None):
+@app.route("/user")
+@app.route("/user/<name>")
+def user(name = None):
     """
     Render hello_there Page
     args : name
     """
     return render_template(
-        "hello_there.html",
+        "user_name.html",
         name = name,
         date = datetime.now()
     )
@@ -36,4 +36,3 @@ def hello_there(name = None):
 @app.route("/api/data")
 def get_data():
     return app.send_static_file("data.json")
-
